@@ -21,6 +21,12 @@ namespace MoreSubroutines
             {
                 Console.WriteLine("The number is not in range");
             }
+            int numToTest = 0;
+            while(!InRange(numToTest))
+            {
+                Console.WriteLine("Enter a number between 32 and 82");
+                numToTest = Convert.ToInt32(Console.ReadLine());
+            }
         }
 
         static bool InRange(int input)
